@@ -1,0 +1,62 @@
+.login-container {
+    background-image: url('../Components/files/sample.jpg');  
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+}
+
+.popup {
+  width: 100%;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 999;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-innter-container {
+    max-width:300px;
+    min-width: 220px;
+}
+
+@media (max-width:600px){
+    .login-container {
+        background-image: url('../Components/files/sample.jpg');  
+    }
+}
+
+@keyframes vanish{
+    0%{
+      opacity: 1;
+      transform: rotateX(90deg);
+    }
+    50%{
+      opacity: 0.5;
+      transform: rotateX(0deg);
+    }
+    100%{
+      display: none;
+      opacity: 0;
+      transform: rotateX(90deg);
+    }
+  }
+  
+
+.error-message {
+    height: 30px;
+    background-color: red;
+    align-items: center;
+    padding: 2px 20px;
+    border-radius: 7px;
+    
+    animation-duration: 6000ms;
+    animation-fill-mode: forwards;
+    animation-name: vanish;
+}

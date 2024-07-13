@@ -1,0 +1,23 @@
+html,
+  body {
+    height: 100%;
+  }
+
+  @media (min-width: 640px) {
+    table {
+      display: inline-table !important;
+    }
+
+    thead tr:not(:first-child) {
+      display: none;
+    }
+  }
+
+  .add-new-todo {
+    position: fixed;
+    right: 20px;
+    border-radius: 50%;
+    padding: 10px;
+    bottom: 20px;
+    background: lightblue;
+}
